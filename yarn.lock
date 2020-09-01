@@ -3724,17 +3724,17 @@ supports-color@^7.0.0, supports-color@^7.1.0:
   dependencies:
     has-flag "^4.0.0"
 
-svelte-preprocess@^4.0.9:
-  version "4.0.11"
-  resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-4.0.11.tgz#ffcf4882c175246b807e770c4b43e184d80b442d"
-  integrity sha512-X/peqFuflEyPkdf3cYeV8iIn1E/Q2CeASjZobqQaY90cfPkA3xPzTQU1wGJ5vpN6KYTQsBzOKuN2gkEyVGz+lQ==
+svelte-preprocess@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/svelte-preprocess/-/svelte-preprocess-4.2.0.tgz#72c5c232d42e49227e909f07985b67f9191bd3cf"
+  integrity sha512-UTDmvFiGhAL888TG+zyhcdN1Uy3kj++9Ue7MVJVBoNREHkecFZem7lsCARGIUgUZg7KfFqanD40Op3JAI7kFHA==
   dependencies:
     "@types/pug" "^2.0.4"
     "@types/sass" "^1.16.0"
     detect-indent "^6.0.0"
     strip-indent "^3.0.0"
 
-svelte@^3.24.0:
+svelte@^3.24.1:
   version "3.24.1"
   resolved "https://registry.yarnpkg.com/svelte/-/svelte-3.24.1.tgz#aca364937dd1df27fe131e2a4c234acb6061db4b"
   integrity sha512-OX/IBVUJSFo1rnznXdwf9rv6LReJ3qQ0PwRjj76vfUWyTfbHbR9OXqJBnUrpjyis2dwYcbT2Zm1DFjOOF1ZbbQ==
@@ -3744,7 +3744,7 @@ synchronous-promise@^2.0.13:
   resolved "https://registry.yarnpkg.com/synchronous-promise/-/synchronous-promise-2.0.13.tgz#9d8c165ddee69c5a6542862b405bc50095926702"
   integrity sha512-R9N6uDkVsghHePKh1TEqbnLddO2IY25OcsksyFp/qBe7XYd0PVbKEWxhcdMhpLzE1I6skj5l4aEZ3CRxcbArlA==
 
-systemjs@^6.4.0, systemjs@^6.5.0:
+systemjs@^6.5.0:
   version "6.5.0"
   resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-6.5.0.tgz#42e5e19e324e99b6e96a946697fddb3de9f6f3d5"
   integrity sha512-B+NzKJD1srC/URfNVBdDExAUAsAVXpVQxZxX54AtqU0xiK9imkqurQu3qi6JdyA2GBAw2ssjolYIa7kh+xY1uw==

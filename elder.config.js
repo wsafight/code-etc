@@ -1,6 +1,6 @@
 module.exports = {
   server: {
-    prefix: '',
+    prefix: '/front-end-code-specification',
   },
   build: {},
   locations: {

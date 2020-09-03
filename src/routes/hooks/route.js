@@ -5,5 +5,5 @@ module.exports = {
     hookInterface.map((hook) => ({
       slug: hook.hook,
     })),
-  permalink: ({ request }) => `/${request.slug}/`,
+  permalink: ({ request }) => `/front-end-code-specification/${request.slug}/`,
 };

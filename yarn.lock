@@ -845,10 +845,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@elderjs/elderjs@^0.0.25":
-  version "0.0.25"
-  resolved "https://registry.yarnpkg.com/@elderjs/elderjs/-/elderjs-0.0.25.tgz#af6fa285ca51ce020fc3b071f0ee4b3d73c54038"
-  integrity sha512-QPRUvVisIjcwoFJTR2Yj0xZMlgBm04LELZ6cNhL8g8EqXA1MdQ4axTk+lWPKvCOwpm2LwNWLOGtShd7uK39m0w==
+"@elderjs/elderjs@^0.1.0":
+  version "0.1.3"
+  resolved "https://registry.yarnpkg.com/@elderjs/elderjs/-/elderjs-0.1.3.tgz#1131bcc4ae9c77c334162eb8d24417c91b224562"
+  integrity sha512-kaLtLXT0R8tVZAQijXnJ+SdM1pZb0NwYZth7bLMAQYnrR9GcIp9CbWrDT4uGcKyGqOkDklqCp2FsDvANr+nxfQ==
   dependencies:
     cli-progress "^3.8.2"
     cosmiconfig "^7.0.0"

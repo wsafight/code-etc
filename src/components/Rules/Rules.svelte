@@ -1,18 +1,17 @@
 <script>
-  export let hooks;
+  export let rules;
   import HookDetail from "../HookDetail/HookDetail.svelte";
 </script>
 
 <style>
-  .hooks {
+  .rules {
     display: grid;
     grid-template-columns: 100%;
   }
 </style>
 
-<div class="hooks">
-  {#each hooks as hook, i}
+<main class="rules">
+  {#each rules as hook, i}
     <HookDetail {hook} {i} />
   {/each}
-
-</div>
+</main>

@@ -1,6 +1,6 @@
 module.exports = {
   server: {
-    prefix: '/front-end-code-specification',
+    prefix: '',
   },
   build: {},
   locations: {
@@ -16,7 +16,7 @@ module.exports = {
   debug: {
     stacks: false,
     hooks: false,
-    performance: false,
+    performance: true,
     build: false,
     automagic: false,
   },
@@ -27,5 +27,6 @@ module.exports = {
     'elderjs-plugin-markdown': {
       routes: ['blog'],
     },
+    '@elderjs/browser-reload': {}, // this reloads your browser when nodemon restarts your server.
   },
 };

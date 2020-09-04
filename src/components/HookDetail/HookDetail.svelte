@@ -84,15 +84,6 @@
     margin-right: 1rem;
   }
 
-  @media (min-width: 768px) {
-    .hook:nth-child(even) {
-      margin-left: 0.5rem;
-    }
-    .hook:nth-child(odd) {
-      margin-right: 0.5rem;
-    }
-  }
-
   .use {
     font-size: 14px;
   }

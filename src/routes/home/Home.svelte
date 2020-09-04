@@ -1,5 +1,4 @@
 <script>
-  import HookList from '../../components/HookList/HookList.svelte';
   import BlogTeaser from '../../components/BlogTeaser/BlogTeaser.svelte';
 
   export let data, link;
@@ -14,7 +13,6 @@
     url: 'https://github.com/wsafight/personBlog/issues/25'
   }]
 
-  const hooks = data.hookInterface.map((hook) => ({...hook, link: link.hooks({slug: hook.hook})}));
 </script>
 
 <style>
@@ -51,9 +49,6 @@
     background: white;
   }
 
-  .about {
-    margin-bottom: 2rem;
-  }
 
   @media (min-width: 768px) {
     .hydrate {
@@ -87,8 +82,6 @@
 </div>
 
 <h2> HTML </h2>
-
-<HookList {hooks}/>
 
 <h2> CSS </h2>
 

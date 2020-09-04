@@ -1,6 +1,6 @@
 <script>
   export let rules;
-  import HookDetail from "../HookDetail/HookDetail.svelte";
+  import RuleDetail from "../Rule/Rule.svelte";
 </script>
 
 <style>
@@ -12,6 +12,6 @@
 
 <main class="rules">
   {#each rules as hook, i}
-    <HookDetail {hook} {i} />
+    <RuleDetail {hook} {i} />
   {/each}
 </main>

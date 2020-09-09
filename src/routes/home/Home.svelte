@@ -1,5 +1,6 @@
 <script>
   import BlogTeaser from '../../components/BlogTeaser/BlogTeaser.svelte';
+  import Questions from './Questions.svelte'
 
   export let data, link;
 
@@ -21,14 +22,15 @@
 </svelte:head>
 
 <header class="banner">
-    <h1>jump-jump 的<u>前端代码规范<u>指北!</h1>
+    <h1>jump-jump 的<u>代码风格<u>指北!</h1>
 
-    <p>通过开发和实践结合其他开源项目整理出得书写规范和经验之谈，包括 HTML CSS JavaScript 与 组件开发等。</p>
+    <p>通过开发和实践结合其他开源项目整理出得书写规范和经验之谈，包括组件开发 以及 HTML CSS JavaScript 等。</p>
 
-    <p>
-        该指北是为了个人在编写代码时能够回避错误、减少纠结和使用反模式。我相信该文档对于某些团队和个人应该是份不错的参考。不过个人也确信当前内容对于任何团队和个人来说都不是绝对理想的。所以根据团队，个人价值观做出合适的改动是正确的。</p>
+    <p>该规范是为了个人在编写代码时能够 参照该文档回避错误、减少纠结和使用反模式。</p>
 
-    <p>该指北也是"强观点，弱立场"，如果你拥有与当前结论相悖的信息，我就会修正该规范。</p>
+    <p>当前内容对于任何团队和个人来说都不是绝对理想的。所以根据团队，个人价值观做出合适的改动是正确的。</p>
+
+    <p>该风格也是<b>强观点，弱立场<b>，如果你拥有与当前结论相悖的信息，我就会修正该规范。</p>
 </header>
 
 <hr>
@@ -36,25 +38,41 @@
 <section>
     <header>
         <h2>相关博客</h2>
-        <p>和代码风格有关的博客</p>
+        <p>和代码风格，代码规范有关的博客</p>
     </header>
-    <div>
-        <div>
-            {#each blogs as blog}
-                <BlogTeaser {blog}/>
-            {/each}
-        </div>
-    </div>
-
+    {#each blogs as blog}
+        <BlogTeaser {blog}/>
+    {/each}
 </section>
 
+<section>
+    <header>
+        <h2>组件开发</h2>
+        <p>和代码风格，代码规范有关的博客</p>
+    </header>
+</section>
 
-<h2> 组件开发 </h2>
+<section>
+    <header>
+        <h2>HTML</h2>
+        <p>和代码风格，代码规范有关的博客</p>
+    </header>
+</section>
 
-<h2> HTML </h2>
+<section>
+    <header>
+        <h2>JavaScript</h2>
+        <p>和代码风格，代码规范有关的博客</p>
+    </header>
+</section>
+<section>
+    <header>
+        <h2>CSS</h2>
+        <p>和代码风格，代码规范有关的博客</p>
+    </header>
+</section>
 
-<h2> CSS </h2>
+<Questions/>
 
-<h2> JavaScript </h2>
 
 

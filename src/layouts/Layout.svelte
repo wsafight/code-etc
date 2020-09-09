@@ -1,12 +1,9 @@
 <script>
-  export let routeHTML, settings;
+  export let routeHTML;
   import Footer from '../components/Footer/Footer.svelte'
 </script>
 
 <style>
-  :global(h1) {
-    font-style: italic;
-  }
 
   .main {
     display: flex;
@@ -36,14 +33,8 @@
 
   .container {
     flex: 1 0 auto; /* 2 */
-    max-width: 900px;
     margin: 0 auto;
     padding: 1rem;
-  }
-
-  :root {
-    --balloon-color: #06395a;
-    --balloon-font-size: 14px;
   }
 
   .footer {
@@ -58,18 +49,13 @@
 
 <svelte:head>
   <link
-    rel="stylesheet"
-    href="{settings.locations.assets.replace('./public', '')}style.css"
-  />
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/balloon-css/balloon.min.css"
-  />
+     rel="stylesheet"
+     href="https://unpkg.com/mvp.css@1.6.2/mvp.css">
 </svelte:head>
 
 <div class="main">
   <div class="indicator"></div>
-  <main class="container" style="height: 2000px">
+  <main class="container">
     {@html routeHTML}
   </main>
   <footer class="footer">

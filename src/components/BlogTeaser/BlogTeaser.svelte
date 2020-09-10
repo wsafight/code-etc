@@ -7,7 +7,7 @@
   <p>{blog.desc}</p>
   <p>
     <a href={blog.url} target="_blank" >
-      <em>查看</em>
+      <em>查看 ↗</em>
     </a>
   </p>
 

@@ -2,7 +2,7 @@
   import BlogTeaser from '../../components/BlogTeaser/BlogTeaser.svelte';
   import Questions from './Questions.svelte'
 
-  export let data, link;
+  let items = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
   let blogs = [{
     title: '2020年 我要这样写代码',
@@ -15,6 +15,12 @@
   }]
 
 </script>
+
+<style>
+    .w-100 {
+        width: 100%;
+    }
+</style>
 
 
 <svelte:head>
@@ -45,31 +51,79 @@
     {/each}
 </section>
 
+<hr>
+
 <section>
     <header>
         <h2>组件开发</h2>
-        <p>和代码风格，代码规范有关的博客</p>
+        <p>与组件开发有关的经验和细节</p>
     </header>
+    {#each items as item}
+        <aside class="w-100">
+            <h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you'd like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>
+                import fs from 'fs'
+            </code>
+        </aside>
+    {/each}
 </section>
+
+<hr>
+
 
 <section>
     <header>
         <h2>HTML</h2>
         <p>和代码风格，代码规范有关的博客</p>
     </header>
+    {#each items as item}
+        <aside class="w-100">
+            <h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you'd like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>
+                import fs from 'fs'
+            </code>
+        </aside>
+    {/each}
 </section>
+
+<hr>
 
 <section>
     <header>
         <h2>JavaScript</h2>
         <p>和代码风格，代码规范有关的博客</p>
     </header>
+    {#each items as item}
+        <aside class="w-100">
+            <h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you'd like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>
+                import fs from 'fs'
+            </code>
+        </aside>
+    {/each}
 </section>
 <section>
     <header>
         <h2>CSS</h2>
         <p>和代码风格，代码规范有关的博客</p>
     </header>
+
+    {#each items as item}
+        <aside class="w-100">
+            <h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you'd like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>
+                import fs from 'fs'
+            </code>
+        </aside>
+    {/each}
 </section>
 
 <Questions/>

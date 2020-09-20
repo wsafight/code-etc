@@ -1,9 +1,12 @@
 <!DOCTYPE html>
       <html lang="en">
         <head>
-          <meta charset="UTF-8" />
-          <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.6.2/mvp.css" data-svelte="svelte-1dijf82"><title>前端代码规范指北</title><link rel="preload" href="/dist/static/s.min.js" as="script"><style data-name="cssStack">.main.svelte-1pf7hfb{display:flex;flex-direction:column;height:100%;min-height:100vh;position:relative}.indicator.svelte-1pf7hfb{position:absolute;top:0;right:0;left:0;bottom:0;background:linear-gradient(to right top, teal 50%, transparent 50%) no-repeat;background-size:100% calc(100% - 100vh);z-index:1;pointer-events:none;mix-blend-mode:darken}.indicator.svelte-1pf7hfb::after{content:'';position:fixed;top:5px;bottom:0;right:0;left:0;background:#fff;z-index:1}.container.svelte-1pf7hfb{flex:1 0 auto;margin:0 auto;padding:1rem}.footer.svelte-1pf7hfb{padding:1.5rem;background:#404040;color:#999;font-size:.85em;overflow-x:hidden;text-align:center}</style>
+          <meta charset="UTF-8" /><link rel="preload" href="/dist/static/s.min.js" as="script"><meta name="viewport" content="width=device-width, initial-scale=1" /><title>前端 ETC(易于修改) 实践</title><link rel="stylesheet" href="https://unpkg.com/mvp.css@1.6.2/mvp.css" data-svelte="svelte-1dijf82"><style data-name="cssStack">.w-100.svelte-2rp8yl{width:100%}
+.w-100.svelte-2rp8yl{width:100%}
+.w-100.svelte-2rp8yl{width:100%}
+.w-100.svelte-2rp8yl{width:100%}
+.w-100.svelte-2rp8yl{width:100%}
+.w-100.svelte-2rp8yl{width:100%}.main.svelte-1pf7hfb{display:flex;flex-direction:column;height:100%;min-height:100vh;position:relative}.indicator.svelte-1pf7hfb{position:absolute;top:0;right:0;left:0;bottom:0;background:linear-gradient(to right top, teal 50%, transparent 50%) no-repeat;background-size:100% calc(100% - 100vh);z-index:1;pointer-events:none;mix-blend-mode:darken}.indicator.svelte-1pf7hfb::after{content:'';position:fixed;top:5px;bottom:0;right:0;left:0;background:#fff;z-index:1}.container.svelte-1pf7hfb{flex:1 0 auto;margin:0 auto;padding:1rem}.footer.svelte-1pf7hfb{padding:1.5rem;background:#404040;color:#999;font-size:.85em;overflow-x:hidden;text-align:center}</style>
         </head>
         <body class="home">
           
@@ -11,36 +14,304 @@
 <div class="main svelte-1pf7hfb"><div class="indicator svelte-1pf7hfb"></div>
   <main class="container svelte-1pf7hfb">
 
-<header class="banner"><h1>jump-jump 的<u>代码风格<u>指北!</u></u></h1>
+<header class="banner"><h1>jump-jump 的   <u>ETC </u>  实践!</h1></header>
+<article><p>在实际开发项目的过程中，ETC 原则，即 Easier To Change，易于变更是非常重要的。为什么解耦很好？ 为什么单一职责很有用？ 为什么好的命名很重要？</p>
 
-    <p>通过开发和实践结合其他开源项目整理出得书写规范和经验之谈，包括组件开发 以及 HTML CSS JavaScript 等。</p>
+   <p>因为这些设计原则让你的代码更容易发生变更。ETC 甚至可以说是其他原则的基石，可以说，我们现在所作的一切都是为了更容易变更！！</p>
 
-    <p>该规范是为了个人在编写代码时能够 参照该文档回避错误、减少纠结和使用反模式。</p>
+   <p>在软件开发中，我们有需要做很多决策。而好的决策会更易于将来的变更。</p>
 
-    <p>当前内容对于任何团队和个人来说都不是绝对理想的。所以根据团队，个人价值观做出合适的改动是正确的。</p>
+   <p>在项目的初期，经验丰富的开发者往往会推迟决策的时机，等到有更多的经验后再进行决策。但是我们还是要基于现有的知识把产品做出来，但是我们还是想要当前的产品可以进行少量的修改就可以适用于后续的开发，而不是有更多的经验后直接进行重写。</p>
 
-    <p>该风格也是<b>强观点，弱立场<b>，如果你拥有与当前结论相悖的信息，我就会修正该规范。</b></b></p></header>
+   <p>有时候，我们的经验不足以做出足够正确的决策，这种情况下，要么试着把写的代码都可替换，这样无论发生什么，这块代码不会成为路障。第二件事，不断记录在工程中面临的决策，有哪些选择以及选择之后的一些猜测。</p>
+
+   <p>ETC 原则来自《程序员修炼之道 第二版》，个人希望通过开发和实践结合其他开源项目整理出前端中 ETC(易于修改)的代码实践，包括 HTML CSS JavaScript 与 组件开发等。</p>
+
+   <p>该指北是为了个人在编写代码时易于修改，编写可维护的前端代码。同时该结合文档可以回避错误、减少纠结和使用反模式。当前内容对于任何团队和个人来说都不是绝对理想的。所以根据团队，个人价值观做出合适的改动是正确的。</p>
+
+   <p>该风格也是<b>强观点，弱立场<b>，如果你拥有与当前结论相悖的信息，我就会立刻对该实践进行修正。</b></b></p></article>
+
 
 <hr>
 
 <section><header><h2>相关博客</h2>
         <p>和代码风格，代码规范有关的博客</p></header>
+
     <aside class="entry"><h3>2020年 我要这样写代码</h3>
   <p>讲解&quot;好代码&quot;的用处以及如何编写&quot;好代码&quot;&quot;</p>
-  <p><a href="https://github.com/wsafight/personBlog/issues/14" target="_blank"><em>查看 ↗</em></a></p></aside><aside class="entry"><h3>玩转 CSS 变量</h3>
+  <p><a href="https://github.com/wsafight/personBlog/issues/14" target="_blank" rel="noopener noreferrer"><em>查看 ↗</em></a></p></aside><aside class="entry"><h3>玩转 CSS 变量</h3>
   <p>通过 css 变量来使用另一种写法构建自适应的代码以及 ui 展示库</p>
-  <p><a href="https://github.com/wsafight/personBlog/issues/25" target="_blank"><em>查看 ↗</em></a></p></aside></section>
+  <p><a href="https://github.com/wsafight/personBlog/issues/25" target="_blank" rel="noopener noreferrer"><em>查看 ↗</em></a></p></aside></section>
+
+<hr>
+
+<section><header><h2>系统设计</h2></header>
+    <aside class="w-100 svelte-2rp8yl"><h3>动静分离</h3>
+    <p>当前的动静分离并不是指代静态请求和动态请求，而是将开发中的容易修改的代码和不易修改的代码分离开。</p>
+    <p>分离后，在开发中，编译和打包时间大大缩短。虽然 bundleless, vite 可以解决这些问题，但实质上，如此拆分实际上在整个项目上实现了单一职责。</p>
+      <details><summary>详解</summary>
+           <p>可以把项目中改动较少的的基础服务以及封装的业务组件给提取出去。利用 Webpack 的 externals 来辅助开发。</p>
+           <p>责任与义务本质上就是对等的，且越对等的就越稳定。这几年，微服务架构，中台，微前端理论层出不穷，本质上就是为了权责对等，对于更加基础的服务，更有产出的业务投入更高的人力与物力以保证更稳定的运行是很正常的一件事。而不是之前的大锅饭(单体应用)。</p></details>
+    <h4>好例子</h4>
+    <code class="w-100 svelte-2rp8yl"><pre>/** 第三方依赖 */
+&lt; script src=//unpkg.com/vue@2.6.11/dist/vue.min.js crossorigin=anonymous&gt;&lt;/script&gt;
+/** 基础依赖 */
+&lt; script src=/js/base.js crossorigin=anonymous&gt;&lt;/script&gt;
+/** 义务依赖(可以依赖基础依赖) */
+&lt; script src=/js/business.js crossorigin=anonymous&gt;&lt;/script&gt;
+/** 后续依赖 */
+      </pre></code></aside>
+
+
+<aside class="w-100 svelte-2rp8yl"><h3>允许巧合 </h3>
+    <p>DRY(不要重复自己)，当践行 DRY 的时候，往往意味着需求变更后仅仅只需要修改一处即可以满足实际需求。  </p>
+    <p>但并非所有的代码重复都是知识的重复，销售和采购是两个业务，但这两个业务线中会有大量的重复代码。 </p>
+    <p>此代码的重复并非知识的重复，仅仅只是一种巧合。 </p>
+    <details><summary>详解</summary>
+         <p>不要过早的抽象业务代码，甚至不要抽象业务代码。多写一点代码无所谓，千万别给自己找事做。 在业务上尽量保持简单和愚蠢。除非你是业务专家，确认当前业务不太会产生变化。 </p>
+         <p>你无法确认当前项目是否会拆分为多个项目，甚至会演变成多个项目组。此时你要做的是把知识抽离出来，但也要允许巧合(即使你要修改多处代码)。 </p></details></aside></section>
+
+<hr>
 
 <section><header><h2>组件开发</h2>
-        <p>和代码风格，代码规范有关的博客</p></header></section>
+        <p>与组件开发有关的经验和细节</p></header>
+    <aside class="w-100 svelte-2rp8yl"><h3>代码行限制</h3>
+    <p>无论是单文件，还是 jsx。一个单独的文件最好只做一件事。我认为 300 行代码内是非常合适的。 </p>
+    <p>不断的将代码拆分出来，分为服务和多个组件。 </p>
+      <details><summary>详解</summary>
+           <p>合并与分离 TODO </p>
+           <p>我们通常会用正交性，把代码拆分出去并不能增加项目的正交性，让其易于修改 </p>
+           <p>仅仅增加可维护性，是否值得？TODO </p></details></aside>
+
+<aside class="w-100 svelte-2rp8yl"><h3>组件选项顺序</h3></aside>
+    <aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+       <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+       <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+       <code>import fs from &#39;fs&#39;
+       </code></aside>
+    <aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside></section>
+
+<hr>
+
 
 <section><header><h2>HTML</h2>
-        <p>和代码风格，代码规范有关的博客</p></header></section>
+        <p>和代码风格，代码规范有关的博客</p></header>
+     <aside class="w-100 svelte-2rp8yl"><h3>元素顺序 </h3>
+    <p></p></aside>
+    <aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside></section>
+
+<hr>
 
 <section><header><h2>JavaScript</h2>
-        <p>和代码风格，代码规范有关的博客</p></header></section>
+        <p>和代码风格，代码规范有关的博客</p></header>
+    <aside class="w-100 svelte-2rp8yl"><h3></h3>
+    <p></p></aside>
+    <aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside></section>
 <section><header><h2>CSS</h2>
-        <p>和代码风格，代码规范有关的博客</p></header></section>
+        <p>和代码风格，代码规范有关的博客</p></header>
+    <aside class="w-100 svelte-2rp8yl"><h3>可调整列表 </h3>
+    <p></p></aside>
+    <aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside><aside class="w-100 svelte-2rp8yl"><h3>MIT License</h3>
+            <p>MVP is released under the permissive MIT license so you can freely use it however you&#39;d like.</p>
+            <p>That means personal projects, commercial ventures, remixes and more are all welcome.</p>
+            <code>import fs from &#39;fs&#39;
+            </code>
+        </aside></section>
 
 <article><h2>问题</h2>
     <details><summary>为何要编写该实践?</summary>

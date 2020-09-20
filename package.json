@@ -1,7 +1,7 @@
 {
-  "name": "front-end-code-specification",
+  "name": "front-end-code-etc",
   "version": "0.0.1",
-  "description": "前端规范",
+  "description": "前端 ETC 原则",
   "author": "jump-jump (984292420@qq.com)",
   "main": "./src/build.js",
   "scripts": {
@@ -77,7 +77,7 @@
     "code-specification"
   ],
   "bugs": {
-    "url": "https://github.com/wsafight/front-end-code-specification/issues"
+    "url": "https://github.com/wsafight/code-etc/issues"
   },
-  "homepage": "https://github.com/wsafight/front-end-code-specification#readme"
+  "homepage": "https://github.com/wsafight/code-etc#readme"
 }
